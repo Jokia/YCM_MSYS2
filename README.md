@@ -1,2 +1,2 @@
 # Install YCM
-Install the vim plug "YouCompleteMe" on windows.
+Install the vim plug "YouCompleteMe".
