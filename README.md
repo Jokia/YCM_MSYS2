@@ -26,7 +26,7 @@ Install the vim plug "YouCompleteMe".
             </pre>
             next, compile ycm_core with command ```mingw32-make.exe ycm_core```.
             
-            ![](https://github.com/Jokia/install_YCM/blob/39dd313770861060b643470882d141f47b66b4cd/raw/msys2_1_0.png)
+            ![image] (https://github.com/Jokia/install_YCM/blob/main/raw/msys2_1_0.png)
             
     *   Fix Problems  
         Unable to load python: ```pacman -S msys/python```.  
