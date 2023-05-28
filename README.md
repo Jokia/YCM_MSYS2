@@ -27,8 +27,5 @@ Install the vim plug "YouCompleteMe".
             next, compile ycm_core with command ```mingw32-make.exe ycm_core```.
             
     *   Fix Problems  
-        Unable to load python: ```pacman -S msys/python```,  
-        No module named watchdog: ```pip install watchdog```.
-            
-            
-        
+        Unable to load python: ```pacman -S msys/python```.  
+        No module named watchdog: ```pip install watchdog```.  
