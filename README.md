@@ -5,7 +5,7 @@ Install the vim plug "YouCompleteMe".
             Install vim use ```pacman -S vim``` and vim plug from this repo https://github.com/junegunn/vim-plug.   
             Go to vim commandline mode and type ```PlugInstall``` to install YCM.  
             Mabye with some error, so you should go to the directory "~/.vim/plugged/YouCompleteMe" and run command
-            ```git submodule update --init --recursive``` to fully install.  
+            ```git submodule update --init --recursive``` to get fully install.  
             
     *   Install Dependencies  
         Run command in UCRT64 terminal: 
@@ -26,7 +26,7 @@ Install the vim plug "YouCompleteMe".
             </pre>
             next, compile ycm_core with command ```mingw32-make.exe ycm_core```.
             
-            ![image] (https://github.com/Jokia/install_YCM/blob/main/raw/msys2_1_0.png)
+        ![image](https://github.com/Jokia/install_YCM/blob/main/raw/msys2_1_0.png)
             
     *   Fix Problems  
         Unable to load python: ```pacman -S msys/python```.  
