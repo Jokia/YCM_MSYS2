@@ -7,7 +7,7 @@ Install the vim plug "YouCompleteMe".
             Mabye with some error, so you should go to the directory "~/.vim/plugged/YouCompleteMe" and run command  
             ```git submodule update --init --recursive``` to fully install.  
             
-    *   Install Dependencies
+    *   Install Dependencies  
         Run command in UCRT64 terminal: 
         <pre>
             pacman -S ucrt64/mingw-w64-ucrt-x86_64-python
@@ -19,7 +19,7 @@ Install the vim plug "YouCompleteMe".
             
     *   Compile YCM  
             Go to YCM directory, create a new directory like "build" with ```mkdir build```.  
-            then, run command:
+            then, run following command to compile ycm:
             <pre>
                 cmake -G "MSYS Makefiles" -DUSE_SYSTEM_LIBCLANG=ON -DCMAKE_IGNORE_PATH=D:/msys64/usr/lib 
                 -DCMAKE_MAKE_PROGRAM=/ucrt64/bin/mingw32-make.exe . ~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/
