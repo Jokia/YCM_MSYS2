@@ -30,7 +30,8 @@ Install the vim plug "YouCompleteMe".
         ![compile ycm_core](https://github.com/Jokia/install_YCM/blob/main/raw/msys2_1_0.png)
             
     *   Fix Problems  
-        Unable to load python: ```pacman -S msys/python```.  
-        No module named watchdog:
-           ```pacman -S ucrt64/mingw-w64-ucrt-x86_64-python-pip```
-           ```pip install watchdog```.  
+        *    Unable to load python: ```pacman -S msys/python```.
+        
+        *    No module named watchdog:  
+            install pip: ```pacman -S ucrt64/mingw-w64-ucrt-x86_64-python-pip```  
+            install watchdog via pip: ```pip install watchdog```.  
