@@ -31,4 +31,6 @@ Install the vim plug "YouCompleteMe".
             
     *   Fix Problems  
         Unable to load python: ```pacman -S msys/python```.  
-        No module named watchdog: ```pip install watchdog```.  
+        No module named watchdog:
+           ```pacman -S ucrt64/mingw-w64-ucrt-x86_64-python-pip```
+           ```pip install watchdog```.  
