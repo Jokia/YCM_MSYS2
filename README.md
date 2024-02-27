@@ -2,30 +2,31 @@
 Install the vim plug "YouCompleteMe".
 *   For Msys2
     *   Install YCM  
-            Install vim use ```pacman -S vim``` command.  
-            Install vim plug from this repo https://github.com/junegunn/vim-plug.   
+            Install vim:
+               ```pacman -S vim```.  
+            Install vim-plug:
+               https://github.com/junegunn/vim-plug.   
             Config vimrc and go to vim commandline mode type ```PlugInstall``` to install YCM.  
-            Mabye with some errors, so you should go to the directory "~/.vim/plugged/YouCompleteMe" and run command
-            ```git submodule update --init --recursive``` to get fully install.  
+            If there are some errors, try to go to the directory "~/.vim/plugged/YouCompleteMe" and run command
+            ```git submodule update --init --recursive``` to get entire installing.  
             
     *   Install Dependencies  
-        Open UCRT64 terminal and run following commands: 
+        Open Msys terminal and run following commands: 
         <pre>
-            pacman -S ucrt64/mingw-w64-ucrt-x86_64-python
-            ...                                   -gcc
-            ...                                   -clang
-            ...                                   -make
-            ...                                   -cmake
+            pacman -S python
+            ...       gcc
+            ...       clang
+            ...       make
+            ...       cmake
         <pre>
             
     *   Compile YCM  
-            Go to the YCM fold "~/.vim/plugged/YouCompleteMe", create a new directory like "build" with ```mkdir build```.  
-            then, run following command to compile ycm:
+            ```cd ~/.vim/plugged/YouCompleteMe``` & ```mkdir build```.  
+            then, input follow command:
             <pre>
-                cmake -G "MSYS Makefiles" -DUSE_SYSTEM_LIBCLANG=ON -DCMAKE_IGNORE_PATH=D:/msys64/usr/lib 
-                -DCMAKE_MAKE_PROGRAM=/ucrt64/bin/mingw32-make.exe . ~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/
+               cmake -DUSE_SYSTEM_LIBCLANG=ON -DCMAKE_MAKE_PROGRAM=/bin/make.exe . ~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/
             </pre>
-            next, compile ycm_core with command ```mingw32-make.exe ycm_core```.
+            finally, compile ycm_core with command ```make ycm_core```.
             
         ![compile ycm_core](https://github.com/Jokia/install_YCM/blob/main/raw/msys2_1_0.png)
             
@@ -33,5 +34,5 @@ Install the vim plug "YouCompleteMe".
         *    Unable to load python: ```pacman -S msys/python```.
         
         *    No module named watchdog:  
-            install pip: ```pacman -S ucrt64/mingw-w64-ucrt-x86_64-python-pip```  
+            install pip: ```pacman -S python-pip```  
             install watchdog via pip: ```pip install watchdog```.  
