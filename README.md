@@ -1,6 +1,6 @@
 # Install YCM for MSYS2  
 
-Open Msys terminal.  
+Open MSYS terminal.  
 
 Install Vim: ```pacman -S vim```  
 
