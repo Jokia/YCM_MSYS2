@@ -1,4 +1,4 @@
-# Install YCM on Msys2  
+# Install YCM for MSYS2  
 
 Open Msys terminal.  
 
