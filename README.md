@@ -2,9 +2,9 @@
 Install the vim plug "YouCompleteMe".
 *   For Msys2
     *   Install YCM  
-            Install vim:
+            Install vim: 
                ```pacman -S vim```.  
-            Install vim-plug:
+            Install vim-plug: 
                https://github.com/junegunn/vim-plug.   
             Config vimrc and go to vim commandline mode type ```PlugInstall``` to install YCM.  
             If there are some errors, try to go to the directory "~/.vim/plugged/YouCompleteMe" and run command
