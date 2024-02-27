@@ -9,7 +9,7 @@ Install vim-plug: https://github.com/junegunn/vim-plug.
 Edit .vimrc and open vim, type ```:PlugInstall``` to install YCM. If there are some errors, try to go to the directory "~/.vim/plugged/YouCompleteMe" and run command: 
 ```git submodule update --init --recursive``` to install entirely.  
 
-Install Dependencies:    
+Install dependencies:    
    <pre>
       pacman -S python
       ...       gcc
@@ -24,7 +24,7 @@ Install Dependencies:
 Compile YCM:  
    ```cd ~/.vim/plugged/YouCompleteMe``` & ```mkdir build```.  
    
-   then, input follow command:
+   next, input following command:
    <pre>
       cmake -DUSE_SYSTEM_LIBCLANG=ON -DCMAKE_MAKE_PROGRAM=/bin/make.exe . ~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/
    </pre>
